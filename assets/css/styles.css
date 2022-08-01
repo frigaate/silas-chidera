@@ -3,6 +3,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     --page-padding: 10px 60px;
     --container-padding: 20px;
     --container-colour: aliceblue;
@@ -64,7 +68,6 @@
 }
 
 .last-container {
-    width: 87.4vw;
     background-color: var(--container-colour);
     padding: var(--container-padding);
     display: flex;
@@ -84,4 +87,21 @@ footer {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+@media only screen and (max-width: 750px) {
+    :root {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .last-container{
+        width: 94%;
+    }
+
+    footer{
+        width: 94vw;
+    }
 }
