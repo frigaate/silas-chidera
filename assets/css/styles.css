@@ -1,14 +1,20 @@
 :root{
     background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     --page-padding: 10px 60px;
+    --container-padding: 20px;
+    --container-colour: aliceblue;
     font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif; ;
+    padding: var(--page-padding);
+    line-height: 1.34;
+    /* width: 100vw; */
 }
 
 .heading{
-    padding: var(--page-padding);
+    /* padding: var(--page-padding); */
     color: aliceblue;
     display: flex;
-    width: auto;
     flex-direction: column;
     align-items: center;
 }
@@ -20,7 +26,59 @@
 
 .heading h3 a {
     text-decoration: none;
-    font-weight: 10;
+    font-weight: lighter;
     color: aliceblue;
 }
 
+.center-container {
+    background-color: aliceblue;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--container-padding);
+    margin: 20px 0;
+}
+
+.center-container img {
+    width: 90%;
+    margin-left: 4.5%;
+
+}
+
+.center-container h3 {
+    margin-bottom: 10px;
+}
+
+.center-container h4 {
+    margin-bottom: -5px;
+    margin-top: -6px;
+    font-size: 50px;
+}
+
+.box-1, .box-1 p {
+    border-width: 0.1px 0;
+    border-style: solid;
+    border-color: black;
+}
+
+.last-container {
+    background-color: var(--container-colour);
+    padding: var(--container-padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.last-container .box-1{
+    align-self: center;
+}
+
+footer {
+    margin-top: 20px;
+    width: 93.5vw;
+    background-color: var(--container-colour);
+    padding: var(--container-padding);
+    margin-left: -70px;
+    display: flex;
+    justify-content: center;
+}
