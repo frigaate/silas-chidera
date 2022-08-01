@@ -2,6 +2,7 @@
     background-image: url(../images/bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100vw;
     --page-padding: 10px 60px;
     --container-padding: 20px;
     --container-colour: aliceblue;
@@ -63,6 +64,7 @@
 }
 
 .last-container {
+    width: 87.4vw;
     background-color: var(--container-colour);
     padding: var(--container-padding);
     display: flex;
@@ -75,10 +77,11 @@
 
 footer {
     margin-top: 20px;
-    width: 93.5vw;
+    width: 97.1vw;
     background-color: var(--container-colour);
     padding: var(--container-padding);
     margin-left: -70px;
     display: flex;
     justify-content: center;
+    position: relative;
 }
