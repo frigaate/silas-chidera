@@ -1,0 +1,26 @@
+:root{
+    background-image: url(../images/bg.jpg);
+    --page-padding: 10px 60px;
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif; ;
+}
+
+.heading{
+    padding: var(--page-padding);
+    color: aliceblue;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading h1{
+    font-size: 70px;
+    margin-bottom: -10px;
+}
+
+.heading h3 a {
+    text-decoration: none;
+    font-weight: 10;
+    color: aliceblue;
+}
+
